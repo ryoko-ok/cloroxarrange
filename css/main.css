@@ -1,0 +1,683 @@
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 34px;
+	line-height: 45px;
+	letter-spacing: 1px;
+	background-color: #84C346;
+	opacity: 80%;
+	color: white;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	color: #84C346;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	margin: 10px 0 5px 0;
+}
+
+p {
+	line-height: 24px;
+	margin-bottom: 2px;
+}
+
+a:link, a:visited { 
+	color: white;
+ 	text-decoration: blink; 
+ 	font-weight: bold;
+ 	padding: 5px;
+}
+
+a:hover, a:active { 
+	color: white;
+	text-decoration: blink; 
+	font-weight: bold;
+	padding: 5px;
+}
+
+
+.hidden {
+	display: none;
+}
+
+
+.box {
+	background-color: #000;
+	color: white;
+	text-align: center;
+	margin: 20px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 980px;
+	background-color: white;
+}
+
+.mainHeader {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.logoHeader {
+	width: 150px;
+	height: auto;
+	margin: 10px 0px 20px 20px;
+}
+
+#catchcopy {
+	font-family: 'Satisfy', cursive, sans-serif;
+	font-size: 80px;
+	color: #84C346;
+	margin: 100px 40px;
+	text-align: center;
+}
+
+#discription {
+	font-size: 10px;
+	line-height: 14px;
+	color: #808080;
+	margin-top: 20px;
+}
+
+/*-------------------- Main --------------------*/
+
+#mainNav {
+	margin: 0;
+	padding: 0;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	height: 60px;
+	margin-top: 50px;
+	margin-left: auto;
+	background: white;
+}
+
+#mainNav ul {
+	list-style-type: none;
+	/*padding-top: 22px;*/
+}
+
+#mainNav ul li {
+	float: left;
+}
+
+#mainNav ul li a {
+	display: block;
+	color: #808080;
+	font-size: 14px;
+	text-decoration: none;
+	margin-left: 15px;
+	margin-top: 10px;
+	padding: 10px;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	border-radius: 10px;
+	cursor: pointer;
+
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+
+#mainNav ul li a:hover {
+	background-color: #84C346;
+	border-radius: 10px;
+	color: white;
+}
+
+/*-------------------- Content Image --------------------*/
+.contentImage {
+	position:relative;
+  	display:inline-block;
+	width: 980px;
+	height: auto;
+	padding-bottom: 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 980px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/*-------------------- Paw Animation --------------------*/
+
+/* paw prints */
+.pad {
+    width: 12px;
+    height: 13px;
+    background-color: white;
+    opacity: 50%;
+    -webkit-border-radius: 30px 30px 30px 30px / 50px     50px 36px 72px;
+    border-radius: 50%  50%  50%  50%  / 60%   60%         40%  40%;
+    display: block;
+    position: absolute;
+}       
+.large {
+   width: 30px;
+   height: 30px;
+   transform: rotate(80deg);
+   left: 50px;
+   top: 25px;
+} 
+.small-1 {
+   transform: rotate(50deg);
+   left: 72px;
+   top: 14px;
+}
+.small-2 {
+   transform: rotate(65deg);
+   left: 87px;
+   top: 25px;
+}  
+.small-3 {
+   transform: rotate(98deg);
+   position: absolute;
+   left: 87px;
+   top: 43px;
+}
+.small-4 {
+   transform: rotate(140deg);
+   position: absolute;
+   left: 75px;
+   top: 57px;
+}
+    
+/* position and animate */
+    
+.paw-print-1 {
+  color: white;
+  opacity: 0;
+  position: absolute;
+  left:120px;
+  top: 300px;
+  transform: rotate(-50deg);
+  -webkit-animation: walk 3s linear infinite;
+  animation: /*keyframe*/walk /*duration*/3s /*transition*/linear /*repeat*/infinite;
+}
+.paw-print-2 {
+  opacity: 0;
+  position: absolute;
+  left: 70px;
+  top: 270px;
+  transform: rotate(-100deg); 
+  -webkit-animation: walk 3s linear infinite 0.25s;
+  animation: walk 3s linear infinite /*delay*/0.25s;
+}
+.paw-print-3 {
+  opacity: 0;
+  position: absolute;
+  left:70px;
+  top: 130px;
+  transform: rotate(-60deg); 
+  -webkit-animation: walk 3s linear infinite 0.5s;
+  animation: walk 3s linear infinite 0.5s;
+}     
+.paw-print-4 {
+  opacity: 0;
+  position: absolute;
+  left: 30px;
+  top:100px;
+  transform: rotate(-120deg); 
+  -webkit-animation: walk 3s linear infinite 0.75s;
+  animation: walk 3s linear infinite 0.75s;
+}    
+.paw-print-5 {
+  opacity: 0;
+  position: absolute;
+  right: 100px;
+  top: -50px;
+  transform: rotate(80deg); 
+  -webkit-animation: walk 3s linear infinite 1s;
+  animation: walk 3s linear infinite 1s;
+}   
+    
+.paw-print-6 {
+  opacity: 0;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  transform: rotate(40deg); 
+  -webkit-animation: walk 3s linear infinite 1.25s;
+  animation: walk 3s linear infinite 1.25s;
+}   
+
+.paw-print-7 {
+  opacity: 0;
+  position: absolute;
+  right: 10px;
+  top: 150px;
+  transform: rotate(80deg); 
+  -webkit-animation: walk 3s linear infinite 1.5s;
+  animation: walk 3s linear infinite 1.5s;
+}   
+
+
+/* walking effect animation keyframes */
+    
+@-webkit-keyframes walk {
+  25%  {opacity: 1;}
+  100% {opacity: 0;}
+}
+    
+@keyframes walk {
+  /* appear */
+  25%  {opacity: 1;}
+  /* disappear */
+  100% {opacity: 0;}
+}
+
+/*-------------------- Main Contents --------------------*/
+
+#mainContact {
+	width: 980px;
+	padding: 20px 20px 0 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#contactArea {
+	width: 470px;
+	border-right: solid 1px #ccc;
+	margin-bottom: 30px;
+	padding: 0 20px 20px 0;
+}
+
+#contactText {
+	font-size: 21px;
+	margin-bottom: 30px;
+	width: 340px;
+	height: 75px;
+	background-color: #000;
+}
+
+#contactForm {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+* {box-sizing:border-box}
+
+/* Contact form style */
+input[type=text], select, textarea {
+  width: 80%;
+  padding: 5px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 5px;
+  margin-bottom: 20px; 
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: #84C346;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+input[type=submit]:hover {
+  background-color: #808080;
+}
+
+
+/*-------------------- Resources --------------------*/
+
+.resources {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+
+.wrapper {
+  position:relative;
+  display:inline-block;
+  text-align: center;
+  width: 220px;
+  height: 300px; 
+}
+
+
+.label {
+  position:absolute;
+  color:white;
+  font-weight: bold;
+  background: #787878;
+  opacity: 70%;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.label:hover {
+  background: #84C346;
+  opacity: 70%;
+}
+
+
+.label-center{
+  left: 0px;
+  top: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#mapArea {
+	width: 380px;
+	height: auto;
+	margin-left: 20px;
+}
+
+
+/*-------------------- About Page --------------------*/
+
+
+#aboutCon {
+	width: 980px;
+	padding-bottom: 20px;
+}
+
+.interview {
+	width: 200px;
+}
+
+.imgfloat {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	background-color: #808080;
+}
+
+.imgfloat p {
+	width: 200px;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+}
+
+
+/*-------------------- Products Page --------------------*/
+.productCon {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	width: 980px;
+	height: auto;
+}
+
+.productBox {
+	width: 280px;
+}
+
+.productBox p {
+	margin: 10px 5px;
+}
+
+.productBox ul li {
+	font-size: 16px;
+	color: #808080;
+	line-height: 24px;
+	margin: 10px 5px;
+	list-style-type: square; 
+	list-style-position: inside;
+}
+
+
+.productBox img {
+	max-width: 100%;
+}
+
+.productBox_urine h3 {
+	border-radius: 5px;
+	text-align: center;
+	padding-bottom: 15px;
+	background-color: #84C346;
+	color: white;
+	padding: 5px 0; 
+}
+
+.productBox_cleaner h3 {
+	border-radius: 5px;
+	text-align: center;
+	padding-bottom: 15px;
+	background-color: #ff7624;
+	color: white;
+	padding: 5px 0; 
+
+}
+
+.productBox_wipes h3 {
+	border-radius: 5px;
+	text-align: center;
+	padding-bottom: 15px;
+	background-color: #348dbe;
+	color: white;
+	padding: 5px 0; 
+
+}
+
+/*-------------------- PetFrendly Page --------------------*/
+
+
+#petCon {
+	width: 980px;
+	padding-bottom: 20px;
+}
+
+.petCon h3 {
+	color: #84C346;
+}
+
+.petCon_imgfloat {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.petCon_imgfloat img {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+}
+
+
+/*-------------------- Footer --------------------*/
+
+
+.mainFooter {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 20px;
+	padding: 0 20px;
+	background-color: #84C346;
+}
+
+.logoFooter, .socialMedia {
+	color: white;
+	text-align: center;
+}
+
+.logoFooter {
+  position: relative;
+  width: 200px;
+  height: 72px;
+  display: flex;
+  margin: 20px auto 10px 30px;
+}
+
+.logoFooter img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.socialMedia {
+	height: 50px;
+	width: 300px;
+	margin-top: 20px;
+	margin-left: auto;
+}
+
+.socialMedia img {
+  width: 50px;
+  margin: 5px;
+}
+
+.footerContainer {
+	width: 940px;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.copyright {
+	padding: 0;
+	margin: 20px 20px 50px auto;
+}
+
+.copyright p {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 10px;
+	color: white;	
+	margin: 5px 20px 0 auto;
+}
+
+
+#footerNav {
+	margin: 0;
+	padding: 0;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	height: 30px;
+	margin: 20px auto 50px 0;
+}
+
+#footerNav ul {
+	list-style-type: none;
+	/*padding-top: 22px;*/
+}
+
+#footerNav ul li {
+	float: left;
+}
+
+#footerNav ul li a {
+	display: block;
+	color: white;
+	font-size: 12px;
+	text-decoration: none;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	padding: 10px;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#footerNav ul li a:hover {
+	background-color: white;
+	border-radius: 10px;
+	color: #84C346;
+}
+
+@media screen and (min-width: 40em) {
+	
+}
